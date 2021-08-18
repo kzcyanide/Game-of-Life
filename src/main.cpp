@@ -35,7 +35,7 @@ void set(int x, int  y, std::wstring s) {
 int main(int argc, char** argv)
 {
     using namespace std::chrono_literals;
-	canvas mycanvas("demo",SCREEN_WIDTH,SCREEN_HEIGHT,BOARD_WIDTH,BOARD_HEIGHT);
+	canvas mycanvas("GameofLife",SCREEN_WIDTH,SCREEN_HEIGHT,BOARD_WIDTH,BOARD_HEIGHT);
 
 	board = new uint32_t[BOARD_WIDTH * BOARD_HEIGHT];
 	state = new uint32_t[BOARD_WIDTH * BOARD_HEIGHT];
