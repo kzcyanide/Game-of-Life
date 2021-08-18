@@ -12,7 +12,7 @@ class canvas {
 
 public:
 	canvas(char const* title, int windowWidth, int windowHeight, int textureWidth, int textureHeight);
-	void Update(uint32_t buffer[], int pitch);
+	void Update(uint32_t buffer[], int pitch, int buffer_width,int buffer_height);
 	bool ProcessInput();
 	~canvas();
 

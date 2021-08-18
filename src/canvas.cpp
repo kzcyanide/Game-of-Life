@@ -26,10 +26,10 @@ canvas::~canvas() {
 	SDL_Quit();
 }
 
-void canvas::Update(uint32_t buffer[], int pitch)
+void canvas::Update(uint32_t buffer[], int pitch,int buffer_width,int buffer_height)
 {
-	pixels = new uint32_t[160 * 100];
-	for (int i = 0; i < 160 * 100; ++i) {
+	pixels = new uint32_t[buffer_width * buffer_height];
+	for (int i = 0; i < buffer_width * buffer_height; ++i) {
 		uint8_t pixel = buffer[i];
 		pixels[i] = (0x00FFFFFF * pixel) | 0xFF000000;
 	}
