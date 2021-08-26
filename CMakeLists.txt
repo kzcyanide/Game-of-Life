@@ -7,7 +7,7 @@ project (GameofLife)
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
-# check if boost was found
+# check if SDL2 was found
 if(SDL2_FOUND)
     message ("SDL2 found")
 else()
